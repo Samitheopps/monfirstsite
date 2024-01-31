@@ -1,0 +1,46 @@
+p {
+    color:blueviolet;
+    text-align: center;
+    
+}
+
+div.burger{
+    background-image: url(img/burger.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+div.open{
+    background-image: url(img/close.png);
+}
+
+nav {
+    display: flex;
+
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+    p {
+      color: rgb(46, 203, 255);
+    }
+    nav {
+        flex-direction: column;
+        display: none;
+    }
+    nav li{
+        text-align: center;
+    }
+    .open + nav {
+        display: block;
+    }
+
+  }
